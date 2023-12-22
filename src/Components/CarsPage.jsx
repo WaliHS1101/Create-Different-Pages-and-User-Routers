@@ -11,7 +11,7 @@ function Products(props) {
                 <img src={elements.img} className='card-img-top' alt="" style={{ height: "180px" }} />
                 <div className='card-body'>
                   <h4 className='card-title '>Model: {elements.name}</h4>
-                  <h5 className='card-text '>Price: {elements.price}$</h5>
+                  <h5 className='card-text '>Price: {elements.price} $</h5>
                   <div className='card-footer '>
                     <h6 className='card-text'>{elements.dec} </h6>
                   </div>

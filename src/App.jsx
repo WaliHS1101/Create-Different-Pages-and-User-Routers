@@ -12,7 +12,7 @@ import BMWX3 from "./Image/BMW X3.jpg"
 import BMWX5 from "./Image/BMW X5.jpg"
 import BMWX6 from "./Image/BMW X6.jpg"
 import AllProducts from './Components/AllProducts'
-import Phone from './Components/Phone'
+import PhonePage from './Components/PhonePage'
 
 
 
@@ -80,7 +80,7 @@ function App() {
         <Route path='/Contact' element={<Contact LoContact={contact} />} />
         <Route path="/AllProducts" element={<AllProducts />} />
         <Route path='/Cars' element={<CarsPage CardsCar={Cars} />} />
-        <Route path="/Phone" element={<Phone />} />
+        <Route path="/Phones" element={<PhonePage />} />
 
       </Routes>
 
