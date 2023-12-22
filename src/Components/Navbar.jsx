@@ -5,7 +5,7 @@ function Navbar(props) {
     return (
 
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
                 <div className="container">
                     <Link to="/" className='nav-link'>
                         <span className="navbar-brand">{props.NavBrand}</span>
@@ -24,7 +24,7 @@ function Navbar(props) {
                             {props.NavLink.map((elements) => {
                                 return (
                                     <li className="nav-item">
-                                        <Link to="Contact" className="nav-link">{elements}</Link>
+                                        <Link to={elements.NavRoute} className="nav-link">{elements.Link}</Link>
                                     </li>
                                 )
                             })}
