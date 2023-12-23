@@ -5,7 +5,7 @@ function Navbar(props) {
     return (
 
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <nav className="navbar navbar-expand-lg navbar-dark bg-dark p-4 pb-2 pt-2 mb-3">
                 <div className="container">
                     <Link to="/" className='nav-link'>
                         <span className="navbar-brand">{props.NavBrand}</span>
@@ -29,6 +29,9 @@ function Navbar(props) {
                                 )
                             })}
                         </ul>
+                        <Link to="SignUp">
+                            <button className='btn btn-primary d-lg-none' >SignUp</button>
+                        </Link>
                     </div>
 
                     <div id="Search" className='collapse navbar-collapse justify-content-end'>
@@ -37,6 +40,10 @@ function Navbar(props) {
                     </div>
 
                 </div>
+
+                <Link to="SignUp">
+                    <button className='btn btn-primary d-lg-block d-none' >SignUp</button>
+                </Link>
 
             </nav>
         </>

@@ -13,6 +13,9 @@ import BMWX5 from "./Image/BMW X5.jpg"
 import BMWX6 from "./Image/BMW X6.jpg"
 import AllProducts from './Components/AllProducts'
 import PhonePage from './Components/PhonePage'
+import NotFound from './Components/NotFound'
+import SignUp from './Components/SignUp'
+import SignIn from './Components/SignIn'
 
 
 
@@ -81,6 +84,10 @@ function App() {
         <Route path="/AllProducts" element={<AllProducts />} />
         <Route path='/Cars' element={<CarsPage CardsCar={Cars} />} />
         <Route path="/Phones" element={<PhonePage />} />
+        <Route path='/SignUp' element={<SignUp />} />
+        <Route path='/SignIn' element={<SignIn />} />
+
+        <Route path='*' element={<NotFound />} />
 
       </Routes>
 
