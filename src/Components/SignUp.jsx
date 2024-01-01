@@ -4,8 +4,7 @@ import "./SignUp.css"
 
 function SignUp() {
 
-    const [user, setUser] = useState(Users)
-
+    const [user, setUser] = useState(Users);
     const [SignUpUserName, SetSignUpUserName] = useState("");
     const [SignUpUserEmail, SetSignUpUserEmail] = useState("");
     const [SignUpUserProfile, SetSignUpUserProfile] = useState("")
