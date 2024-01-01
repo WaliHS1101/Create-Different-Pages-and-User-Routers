@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Users from "./Users"
 import "./SignUp.css"
+import { Link } from 'react-router-dom';
 
 function SignUp() {
 
@@ -57,6 +58,8 @@ function SignUp() {
 
                         <label htmlFor="UserPassword" className='form-label mt-2'>Password</label>
                         <input type="password" placeholder='Password' className='form-control' onChange={(e) => { SetSignUpUserPwd(e.target.value) }} />
+
+                        <Link to="/SignIn" className='m-1'><p>Already have account click here</p></Link>
 
                         <input type="submit" className='mt-4 btn btn-success d-block m-auto ' />
                     </form>

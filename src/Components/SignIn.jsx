@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function SignIn() {
     return (
@@ -14,6 +15,9 @@ function SignIn() {
 
                         <label htmlFor="UserPassword" className='form-label mt-2'>Password</label>
                         <input type="password" placeholder='Password' className='form-control' />
+
+                        <Link to="/SignUp" className='m-1'><p>don't have account click here</p></Link>
+
 
                         <input type="submit" className='mt-4 btn btn-success d-block m-auto ' />
                     </form>
