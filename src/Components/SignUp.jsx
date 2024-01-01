@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import Users from "./Users"
 import "./SignUp.css"
 import { Link } from 'react-router-dom';
+import useLogInData from '../Hooks/useLogInContext';
 
 function SignUp() {
-
-    const [user, setUser] = useState(Users);
+    const { user, setUser } = useLogInData();
     const [SignUpUserName, SetSignUpUserName] = useState("");
     const [SignUpUserEmail, SetSignUpUserEmail] = useState("");
     const [SignUpUserProfile, SetSignUpUserProfile] = useState("")
@@ -33,7 +32,6 @@ function SignUp() {
             else {
                 const Person = { uName: SignUpUserName, uEmail: SignUpUserEmail, uProfile: SignUpUserProfile, uPwd: SignUpUserPwd }
                 setUser([...user, Person])
-                console.log(user)
             }
         }
 
